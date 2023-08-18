@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap'); /*fonte*/
 * {
     padding: 0;
     margin: 0;
@@ -76,7 +76,7 @@ body {
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-     /*ediatr o botao */
+     /*texto do butão entrar */
 }
 
 .login-button button:hover {
@@ -86,7 +86,7 @@ body {
 .login-button button a {
     text-decoration: none;
     font-weight: 500;
-    color: #fff;
+    color: #fff;   /*letra do butão*/
 }
 
 .form-header h1::after {
@@ -144,7 +144,7 @@ body {
     font-weight: 600;
     color: #000000c0;
 
-    /*cor dos mines titulos*/
+    /*cor dos textes e detalhes do texto (mines titulos)*/
 }
 
 .input-box input::placeholder {
@@ -175,6 +175,9 @@ body {
     font-size: 0.81rem;
     font-weight: 600;
     color: #000000c0;
+
+
+     /*texto que esta escrito dentro da bolinha*/
 }
 
 .continue-button button {
@@ -184,11 +187,15 @@ body {
     background-color: #6c63ff;
     padding: 0.62rem;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer;  /*curso mãozinha*/
+
+     /*editar o butão continuar*/
 }
 
 .continue-button button:hover {
     background-color: #6b63fff1;
+
+    /*muda de cor oa passa o mouse por cima*/
 }
 
 .continue-button button a {
@@ -196,17 +203,19 @@ body {
     font-size: 0.93rem;
     font-weight: 500;
     color: #fff;
+
+    /*texto que aparece dentro do butão continaur*/
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1330px) {  /*inicio responsivo*/
     .form-image {
-        display: none;
+        display: none;  /*tira a imagem*/
     }
     .container {
-        width: 50%;
+        width: 50%;   
     }
     .form {
-        width: 100%;
+        width: 100%;   
     }
 }
 
@@ -219,7 +228,7 @@ body {
         flex-direction: column;
         z-index: 5;
         padding-right: 5rem;
-        max-height: 10rem;
+        max-height: 10rem;  /*escrou*/
         overflow-y: scroll;
         flex-wrap: nowrap;
     }
@@ -227,7 +236,7 @@ body {
         margin-top: 2rem;
     }
     .gender-group {
-        flex-direction: column;
+        flex-direction: column; /*bolinha um debixo da outra*/
     }
     .gender-title h6 {
         margin: 0;
