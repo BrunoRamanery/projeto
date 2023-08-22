@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!permite usar icones do font awesome ->
     <link rel="stylesheet" href="assents/css/style.css">
+    
     <title>Formulario de Cadastro</title>
 </head>
 <body>
-    <div class = "container">
+    <main id="container">
         <div class = "form-image">
-            <img src = "img/undraw_diary_re_4jpc.svg" >
+            <img src = "img/fundo.svg" >
         </div>
     </div>
     <div class="form">
@@ -17,36 +19,66 @@
             <div class="form-header">
                 <div class="title" >
                     <h1>Cadastre-se</h1>
+                    <i  id="icone_lua" class="fa-solid fa-moon"></i>
                 </div>
-                <div class="login-button">
+                <div class="login-button">  <! essa div cria o butão login->
                     <button><a href="#">Entrar</a></button>
                 </div>
             </div>
-            <div class="input-group">
-            <div class="input-box">
-                <label for="fistname">Primeiro Nome</label>
-                <input id="fistname" type="text" name="fistname" placeholder="Digete seu Primeiro nome" required>
-            </div>
-            <div class="input-box">
-                <label for="lastname">Sobrenome</label>
-                <input id="lastname"" type="text" name="lastname"" placeholder="Digete seu Sobrenome" required>
-            </div>
-            <div class="input-box">
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="Digete seu email" required>
-            </div>
-            <div class="input-box">
-                <label for="number">Celular</label>
-                <input id="number" type="tel" name="number" placeholder="(xx)xxxxx-xxxx" required>
-            </div>
-            <div class="input-box">
-                <label for="password">Senha</label>
-                <input id="password" type="password" name="password" placeholder="Digete sua senha" required>
-            </div>
-            <div class="input-box">
-                <label for="Confirmpassword"> Confirme sua Senha</label>
-                <input id="Confirmpassword" type="password" name="Confirmpassword" placeholder="Digete sua senha" required>
-            </div>
+            <div id="inputs">  <! essa div cria os imputs -> 
+                <! usuario ->
+                <div class="input-box">
+                    <label for="name">
+                        Nome
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>  <!icone->
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                        </div>
+                    </label>
+                </div>
+
+                <!email->
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i> <!icone->
+                            <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+                        </div>
+                    </label>
+                </div>
+
+                <!celular->
+                <div class="input-box">
+                    <label for="celular">
+                        Celular
+                        <div class="input-field">
+                            <i class="fa-solid fa-phone"></i></i> <!icone->
+                            <input type="tel" id="number" name="number" placeholder="(xx)xxxxxx-xxxx" required>
+                        </div>
+                    </label>
+                </div>
+
+                <!-senha->
+                <div class="input-box">
+                    <label for="password">
+                        Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i> <!icone->
+                            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                        </div>
+                    </label>
+                </div>
+                <!-confirmar senha->
+                <div class="input-box">
+                    <label for="password">
+                        Confirme sua Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i> <!icone->
+                            <input type="password" id="password" name="password" placeholder="Confirma-me sua senha" required>
+                        </div>
+                    </label>
+                </div>
             </div>
             <div class="gender-inputs">
                 <div class="gender-titles">
@@ -74,15 +106,24 @@
                     </div>
                 </div>
             </div>
-
-            <div class="continue-button">
+      <div id="social_midia" > <! essa div junta os icones de mida social->
+        <a href="#">
+          <img src="img/facebook-logo.png" alt="facebook-logo"></a>
+             <a href="#">
+               <img src="img/google-logo.png" alt="google-logo"></a>
+                   <a href="#">
+                      <img src="img/instagram-logo.png" alt="instagram-logo"></a>
+        </div>
+        
+            <div class="continue-button">  <! essa divcriao butão continuar->
                 <button><a href="#">Continuar</a> </button>
             </div>
 
                 </div>
             </div>
         </form>
-    </div>
+        </main>
+    
 
 </body>
 </html>

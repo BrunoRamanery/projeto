@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap'); /*fonte*/
+:root {
+    /* cor clara */
+    --color-light-50: #f8fafc;
+
+    /* cor escura*/
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    /* roxo */
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf46ef;
+
+    /* variante  */
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    
+    /* tirar o espaçamento*/
 }
 
 body {
@@ -12,7 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0c0ce94d;
+    background: var(--color-light-50);
 
     /*fundo tela*/
 }
@@ -217,6 +235,7 @@ body {
     .form {
         width: 100%;   
     }
+}
 }
 
 @media screen and (max-width: 1064px) {
