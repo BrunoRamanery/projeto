@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap'); /*fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+/** variaveis cores **/
 :root {
-    /* cor clara */
+    /* claro */
     --color-light-50: #f8fafc;
 
-    /* cor escura*/
+    /* escuro */
     --color-dark-50: #797984;
     --color-dark-100: #312d37;
     --color-dark-900: #000;
@@ -13,254 +15,24 @@
     --color-purple-100: #a855f7;
     --color-purple-200: #bf46ef;
 
-    /* variante  */
+    /* Gradient */
     --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
 
+    /* General */
 * {
-    padding: 0;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    
-    /* tirar o espaçamento*/
 }
 
-body {
-    width: 100%;
+#container {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-light-50);
-
-    /*fundo tela*/
-}
-
-.container {
-    width: 80%;
-    height: 80vh;
-    display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
-
-     
-}
-
-.form-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fde3a7d7;  /*fundo imagem */
-    padding: 1rem;
-
-    
-}
-
-.form-image img {
-    width: 31rem;
-
-    /*tamanho imagem*/
-}
-
-.form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;  /*colocar os dados em colunas */
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;  /*fundo tela cadastro*/
-    padding: 3rem;
-
-   
-}
-
-.form-header {
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
-
-     /*espaçamento inicial */
-}
-
-.login-button {
-    display: flex;
-    align-items: center;
-
-     /*centralizar butao */
-}
-
-.login-button button {
-    border: none;
-    background-color: #6c63ff;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-     /*texto do butão entrar */
-}
-
-.login-button button:hover {
-    background-color: #6b63fff1;  /*muda de cor oa passa o mouse por cima*/
-}
-
-.login-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #fff;   /*letra do butão*/
-}
-
-.form-header h1::after {
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #6c63ff;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
-
-     /*linha depois do cadastrar */
-}
-
-.input-group {
-    display: flex;
-    flex-wrap: wrap;  /*um do lado do outro*/
-    justify-content: space-between;
-    padding: 1rem 0;
-}
-
-.input-box {
-    display: flex;
-    flex-direction: column;  /*um debiaxo do outro*/
-    margin-bottom: 1.1rem;
-}
-
-.input-box input {
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-    font-size: 0.8rem;
-
-     /*onde se escreve */
-}
-
-.input-box input:hover {
-    background-color: #eeeeee75;
-
-     /*muda de cor oa passa o mouse por cima*/
-}
-
-.input-box input:focus-visible {
-    outline: 1px solid #6c63ff;
-
-    /*cor da borda de onde se escreve*/
-}
-
-.input-box label,
-.gender-title h6 {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
-
-    /*cor dos textes e detalhes do texto (mines titulos)*/
-}
-
-.input-box input::placeholder {
-    color: #000000be;
-
-    /*cor do que esta escrito onde se escreve*/
-}
-
-.gender-group {
-    display: flex; /*bolinha um do lado do outro*/
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 .5rem;
-}
-
-.gender-input {
-    display: flex;
-    align-items: center;
-}
-
-.gender-input input {
-    margin-right: 0.35rem;
-
-    /*espaçamento bolinha e texto*/
-}
-
-.gender-input label {
-    font-size: 0.81rem;
-    font-weight: 600;
-    color: #000000c0;
-
-
-     /*texto que esta escrito dentro da bolinha*/
-}
-
-.continue-button button {
     width: 100%;
-    margin-top: 2.5rem;
-    border: none;
-    background-color: #6c63ff;
-    padding: 0.62rem;
-    border-radius: 5px;
-    cursor: pointer;  /*curso mãozinha*/
-
-     /*editar o butão continuar*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-gradient);
 }
 
-.continue-button button:hover {
-    background-color: #6b63fff1;
-
-    /*muda de cor oa passa o mouse por cima*/
-}
-
-.continue-button button a {
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
-
-    /*texto que aparece dentro do butão continaur*/
-}
-
-@media screen and (max-width: 1330px) {  /*inicio responsivo*/
-    .form-image {
-        display: none;  /*tira a imagem*/
-    }
-    .container {
-        width: 50%;   
-    }
-    .form {
-        width: 100%;   
-    }
-}
-}
-
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
-        height: auto;
-    }
-    .input-group {
-        flex-direction: column;
-        z-index: 5;
-        padding-right: 5rem;
-        max-height: 10rem;  /*escrou*/
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-    }
-    .gender-inputs {
-        margin-top: 2rem;
-    }
-    .gender-group {
-        flex-direction: column; /*bolinha um debixo da outra*/
-    }
-    .gender-title h6 {
-        margin: 0;
-    }
-    .gender-input {
-        margin-top: 0.5rem;
-    }
 }
