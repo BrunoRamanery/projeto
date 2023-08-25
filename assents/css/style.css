@@ -49,22 +49,22 @@
 }
 
 /* Form Header */ 
-#form_header {     /*organiza o header*/
+#form_header {     /*organiza o icone*/
     display: flex;
     align-items: center;
     justify-content: space-between;   
 }
 
 #form_header h1 {
-    font-size: 40px;   /*letra*/
+    font-size: 40px;   /*letra tamanho*/
     position: relative;
 }
 
-#form_header h1::before {       /*linha que fica em baixo*/
+#form_header h1::before {    /*linha*/
     position: absolute;
     content: '';
-    width: 40%;
-    height: 3px;
+    width: 50%;
+    height: 5px;
     background-color: var(--color-purple-50);
     bottom: 10px;
     border-radius: 5px;
@@ -73,4 +73,44 @@
 #mode_icon {
     cursor: pointer;   /*criar a mãozinha*/
     font-size: 20px;
+}
+
+/* Inputs */
+#inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+input-box>label {    /*tamanho e cor da letra*/
+    font-size: 14px;
+    color: var(--color-dark-50);
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    border-bottom: 1px solid var(--color-purple-50);
+    cursor: text;
+}
+
+.input-field i {     /*icone do input*/
+    font-size: 18px;
+    cursor: text;
+    color: var(--color-dark-900);
+} 
+
+.input-field input {    /*caixa de texto*/
+    border: none;
+    width: 260px;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.input-field input:focus {
+    outline: none;
 }
