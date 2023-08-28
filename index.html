@@ -8,7 +8,7 @@
     
         <link rel="stylesheet" href="assents/css/style.css">
     
-        <title>Login Dark/Light Mode</title>
+        <title>Cadastrar</title>
     </head>
 <body>
     <main id="container"> <! é o fundo da pagina ->
@@ -21,10 +21,10 @@
                 <i id="mode_icon" class="fa-solid fa-moon"></i>    <! icone da lua para criar a tela dark->
             </div>
                 
-                <div class="login-button">  <! essa div cria o butão login->
-                    <button><a href="#">Entrar</a></button>
-                </div>
-            </div>
+                <button type="submit" id="login_button">      <! essa div cria o butão login->
+                    Login
+                </button>
+
             <div id="inputs">  <!essa div cria os imputs -> 
                 <! usuario ->
                 <div class="input-box">
@@ -32,7 +32,7 @@
                         Nome
                         <div class="input-field">
                             <i class="fa-solid fa-user"></i>  <!icone->
-                            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>    <! required faz ser obrigatorio->
                         </div>
                     </label>
                 </div>
@@ -113,15 +113,14 @@
                 </div>
             </div>
      
-            <div class="continue-button">  <! essa divcriao butão continuar->
-                <button><a href="#">Continuar</a> </button>
-            </div>
-
-                </div>
+            <button type="submit" id="continuar_button">       <! essa divcriao butão continuar->
+                Continuar
+            </button>
             </div>
         </form>
         </main>
-    
+        <script type="text/javascript" src="assents/js/scrip.js"></script>   <! chama a função javascript>
 
+      
 </body>
 </html>

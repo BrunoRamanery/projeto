@@ -88,7 +88,7 @@ input-box>label {    /*tamanho e cor da letra*/
     color: var(--color-dark-50);
 }
 
-.input-field {
+.input-field {        /*caixa de input*/
     display: flex;
     align-items: center;
     gap: 15px;
@@ -111,6 +111,72 @@ input-box>label {    /*tamanho e cor da letra*/
     padding: 0px 5px;
 }
 
-.input-field input:focus {
+.input-field input:focus {    /*tira a borda do texto*/
     outline: none;
+}
+
+/* Login Button */
+#login_button {
+    border: none;
+    background: var(--color-gradient);
+    padding: 7px;
+    border-radius: 3px;
+    color: var(--color-light-50);
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#login_button:hover {
+    transform: scale(1.05);
+}
+
+/* cadastar Button */
+#continuar_button {
+    border: none;
+    background: var(--color-gradient);
+    padding: 7px;
+    border-radius: 3px;
+    color: var(--color-light-50);
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#continuar_button:hover {
+    transform: scale(1.05);
+}
+/* modo escuro */
+.dark#cadastro_form {                            /* muda a cor para escuro*/
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#cadastro_form .input-field input,   /* muda a cor do input */
+.dark#cadastro_form .input-field i {     /* muda a cor do icone do input*/
+    color: var(--color-light-50);
+}
+.dark#container{
+    color: var(--color-gradient);
+    background-color: var(--color-light-50);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1330px) {
+    
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+   
 }
