@@ -163,20 +163,12 @@ input-box>label {    /*tamanho e cor da letra*/
     animation: light-to-dark-background 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1330px) {
-    
-    .container {
-        width: 50%;
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:100%; } */
     }
-    .form {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
-        height: auto;
-    }
-   
-}
+    @media only screen and (max-device-width: 900px) {
+        /* .menu { width:600px; } */
+        }
+        @media only screen and (max-device-width: 700px) {
+            /* .menu { width:400px; } */
+            }
