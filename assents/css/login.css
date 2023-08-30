@@ -16,9 +16,8 @@
     --color-purple-200: #bf46ef;
 
     /* Gradient */
-    --color-gradient: #BDADAD;
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
 }
-
 /* General */
 * {
     font-family: 'Poppins', sans-serif;
@@ -36,7 +35,7 @@
     background: var(--color-gradient);
 }
 
-#cadastro_form {
+#login_form {
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -65,7 +64,7 @@
     content: '';
     width: 50%;
     height: 5px;
-    background-color: var(--color-gradient);
+    background-color: var(--color-purple-50);
     bottom: 10px;
     border-radius: 5px;
 }
@@ -74,7 +73,6 @@
     cursor: pointer;   /*criar a mãozinha*/
     font-size: 20px;
 }
-
 /* Inputs */
 #inputs {
     display: flex;
@@ -114,9 +112,8 @@ input-box>label {    /*tamanho e cor da letra*/
 .input-field input:focus {    /*tira a borda do texto*/
     outline: none;
 }
-
-/* Login Button */
-#login_button {
+/* Entrar Button */
+#entrar_button {
     border: none;
     background: var(--color-gradient);
     padding: 7px;
@@ -127,34 +124,18 @@ input-box>label {    /*tamanho e cor da letra*/
     cursor: pointer;
 }
 
-#login_button:hover {
-    transform: scale(1.05);
-}
-
-/* cadastar Button */
-#continuar_button {
-    border: none;
-    background: var(--color-gradient);
-    padding: 7px;
-    border-radius: 3px;
-    color: var(--color-light-50);
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-#continuar_button:hover {
+#entrar_button:hover {
     transform: scale(1.05);
 }
 /* modo escuro */
-.dark#cadastro_form {                            /* muda a cor para escuro*/
+.dark#login_form {                            /* muda a cor para escuro*/
     color: var(--color-light-50);
     background-color: var(--color-dark-100);
     animation: light-to-dark-background 0.3s ease-in-out;
 }
 
-.dark#cadastro_form .input-field input,   /* muda a cor do input */
-.dark#cadastro_form .input-field i {     /* muda a cor do icone do input*/
+.dark#login_form .input-field input,   /* muda a cor do input */
+.dark#login_form .input-field i {     /* muda a cor do icone do input*/
     color: var(--color-light-50);
 }
 .dark#container{
@@ -162,13 +143,3 @@ input-box>label {    /*tamanho e cor da letra*/
     background-color: var(--color-light-50);
     animation: light-to-dark-background 0.3s ease-in-out;
 }
-
-@media only screen and (max-device-width: 900px) {
-    /* .menu { width:100%; } */
-    }
-    @media only screen and (max-device-width: 900px) {
-        /* .menu { width:600px; } */
-        }
-        @media only screen and (max-device-width: 700px) {
-            /* .menu { width:400px; } */
-            }

@@ -1,8 +1,7 @@
-
 const mode = document.getElementById('mode_icon');  /*marca o icone lua*/
 
 mode.addEventListener('click', () => {
-    const form = document.getElementById('cadastro_form');  /*o if troca o simbolo de lua pelo simplo de sol*/
+    const form = document.getElementById('login_form');  /*o if troca o simbolo de lua pelo simplo de sol*/
 
     if(mode.classList.contains('fa-moon')) {
         mode.classList.remove('fa-moon');
